@@ -1,14 +1,13 @@
 const outputField = document.getElementById("output-field")
 
 const runCode = () => {
-    setInterval(randomArrayMaker, 1000)
+    setInterval(randomBackgroundColor, 1000)
 }
 
-const randomArrayMaker = () => {
-    randomArray = []
-    for (let i = 0; i < 100; i++){
-        randomNum = Math.floor((Math.random() * 100) + 1);
-        randomArray.push(randomNum)
-    }
-    outputField.innerHTML = randomArray
+const randomBackgroundColor = () => {
+    let x = Math.floor(Math.random() * 256);
+    let y = Math.floor(Math.random() * 256);
+    let z = Math.floor(Math.random() * 256);
+    let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    document.body.style.background = bgColor
 }
