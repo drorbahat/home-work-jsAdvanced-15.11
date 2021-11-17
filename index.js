@@ -1,13 +1,16 @@
 const outputField = document.getElementById("output-field")
 
 const runCode = () => {
-    nice(randomNum, 55)
+    amazing(randomNum)
 }
 
-const randomNum = (num) => {
-    outputField.innerHTML = num
+function amazing(callback) {
+    const num = callback(42, 128, 37, 81, 66);
+    outputField.innerHTML = "Num: " + num
 }
 
-function nice(callback, num) {
-    callback(num);
+const randomNum = (x, y, z, t, r) => {
+    let numlist = [x, y, z, t, r]
+    let randomNum = numlist[Math.floor(Math.random() * numlist.length)];
+    return randomNum
 }
