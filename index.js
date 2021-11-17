@@ -1,14 +1,14 @@
 const outputField = document.getElementById("output-field")
 
 const runCode = () => {
-    outputField.innerHTML = ''
-    doWork(showName)
+    cool(randomNum)
 }
 
-const showName = () => {
-    outputField.innerHTML = "Dror Bahat"
+const randomNum = () => {
+    num = Math.floor((Math.random() * 100) + 1)
+    outputField.innerHTML = num
 }
 
-const doWork = (callBack) => {
-    callBack()
+function cool(callback) {
+    callback()
 }
