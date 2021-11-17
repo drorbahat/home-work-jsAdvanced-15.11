@@ -1,15 +1,17 @@
 const outputField = document.getElementById("output-field")
 
 const runCode = () => {
-    nice(paintDom)
+    amazing(randomColorBackround)
 }
 
-const paintDom = (colorInput) => {
-    let Color = colorInput
-    outputField.style.background = Color;
+const randomColorBackround = (x, y, z) => {
+    let colorList = [x, y, z]
+    let randomColor = colorList[Math.floor(Math.random() * colorList.length)];
+    outputField.style.background = randomColor
+    return randomColor
 }
 
 function amazing(paintCallback) {
     const paintedColor = paintCallback("Red", "Green", "Blue");
-    document.write("Painted Color: " + paintedColor);
+    outputField.innerHTML = "Painted Color: " + paintedColor;
 }
