@@ -1,0 +1,31 @@
+#main-container {
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(168,230,207,1) 0%, rgba(255,211,182,1) 70%, rgba(255,139,148,1) 100%);    background-repeat: no-repeat;
+}
+
+#output-field{
+    background-color: rgba(255, 255, 255, 0.24);
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+    
+
+}
+
+.title{
+    background-color: rgba(0, 0, 0, 0.267);
+    color: white;
+}
+
+.code-input {
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-color: rgba(0, 255, 255, 0);
+    text-align: center;
+}
+
+.code-input:focus{
+    outline: 0px;
+
+}
