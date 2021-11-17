@@ -1,16 +1,17 @@
 const outputField = document.getElementById("output-field")
 
 const runCode = () => {
-    amazing(randomNum)
+    cool(paintDom)
 }
 
-function amazing(callback) {
-    const num = callback(42, 128, 37, 81, 66);
-    outputField.innerHTML = "Num: " + num
+const paintDom = () => {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var randomColor = "rgb(" + x + "," + y + "," + z + ")";
+    outputField.style.background = randomColor;
 }
 
-const randomNum = (x, y, z, t, r) => {
-    let numlist = [x, y, z, t, r]
-    let randomNum = numlist[Math.floor(Math.random() * numlist.length)];
-    return randomNum
+function cool(paintCallback) {
+    paintCallback();
 }
