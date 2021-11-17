@@ -1,8 +1,6 @@
 #main-container {
     text-align: center;
-    height: 100vh;
-    background: linear-gradient(45deg, rgba(168,230,207,1) 0%, rgba(255,211,182,1) 70%, rgba(255,139,148,1) 100%);    background-repeat: no-repeat;
-}
+    height: 100vh;}
 
 #output-field{
     background-color: rgba(255, 255, 255, 0.24);
