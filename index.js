@@ -9,6 +9,7 @@ const paintDom = (colorInput) => {
     outputField.style.background = Color;
 }
 
-function nice(paintCallback) {
-    paintCallback("red");
+function amazing(paintCallback) {
+    const paintedColor = paintCallback("Red", "Green", "Blue");
+    document.write("Painted Color: " + paintedColor);
 }
