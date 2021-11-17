@@ -1,14 +1,13 @@
 const outputField = document.getElementById("output-field")
 
 const runCode = () => {
-    cool(randomNum)
+    nice(randomNum, 55)
 }
 
-const randomNum = () => {
-    num = Math.floor((Math.random() * 100) + 1)
+const randomNum = (num) => {
     outputField.innerHTML = num
 }
 
-function cool(callback) {
-    callback()
+function nice(callback, num) {
+    callback(num);
 }
